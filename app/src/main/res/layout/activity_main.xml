@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblChopp"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/choop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblPizzas"
+        android:layout_width="77dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/pizzas"
+        app:layout_constraintStart_toStartOf="@+id/lblChopp"
+        app:layout_constraintTop_toBottomOf="@+id/lblChopp" />
+
+    <TextView
+        android:id="@+id/lblRecheios"
+        android:layout_width="78dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/recheios"
+        app:layout_constraintStart_toStartOf="@+id/lblPizzas"
+        app:layout_constraintTop_toBottomOf="@+id/lblPizzas" />
+
+    <TextView
+        android:id="@+id/lblPessoas"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/pessoas"
+        app:layout_constraintStart_toStartOf="@+id/lblRecheios"
+        app:layout_constraintTop_toBottomOf="@+id/lblRecheios" />
+
+    <EditText
+        android:id="@+id/txtChopp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblChopp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblChopp" />
+
+    <EditText
+        android:id="@+id/txtPizzas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblPizzas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblPizzas" />
+
+    <EditText
+        android:id="@+id/txtRecheios"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblRecheios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblRecheios" />
+
+    <EditText
+        android:id="@+id/txtPessoas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblPessoas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblPessoas" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="onCalcular"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPessoas" />
+
+    <TextView
+        android:id="@+id/lblConsumo"
+        android:layout_width="66dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/consumo"
+        app:layout_constraintStart_toStartOf="@+id/lblPessoas"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/lblServicos"
+        android:layout_width="70dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/servicos"
+        app:layout_constraintStart_toStartOf="@+id/lblConsumo"
+        app:layout_constraintTop_toBottomOf="@+id/lblConsumo" />
+
+    <TextView
+        android:id="@+id/lblTotal"
+        android:layout_width="67dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/total"
+        app:layout_constraintStart_toStartOf="@+id/lblServicos"
+        app:layout_constraintTop_toBottomOf="@+id/lblServicos" />
+
+    <TextView
+        android:id="@+id/lblPorPessoa"
+        android:layout_width="62dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/porPessoa"
+        app:layout_constraintStart_toStartOf="@+id/lblTotal"
+        app:layout_constraintTop_toBottomOf="@+id/lblTotal" />
+
+    <EditText
+        android:id="@+id/txtConsumo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblConsumo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblConsumo" />
+
+    <EditText
+        android:id="@+id/txtServicos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblServicos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblServicos" />
+
+    <EditText
+        android:id="@+id/txtTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblTotal" />
+
+    <EditText
+        android:id="@+id/txtPorPessoa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lblPorPessoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblPorPessoa" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pizzaria Horacio</string>
+
+    <string name="choop">Chopp : </string>
+    <string name="pizzas">Pizzas : </string>
+    <string name="recheios">Recheios : </string>
+    <string name="pessoas">Pessoas : </string>
+    <string name="calcular">Calcular  </string>
+    <string name="consumo">Consumo : </string>
+    <string name="servicos">Servoços : </string>
+    <string name="total">Total : </string>
+    <string name="porPessoa">Por Pessoa : </string>
+</resources>
