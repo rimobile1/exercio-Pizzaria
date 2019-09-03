@@ -117,8 +117,8 @@
 
     <TextView
         android:id="@+id/lblConsumo"
-        android:layout_width="66dp"
-        android:layout_height="32dp"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
         android:layout_marginTop="32dp"
         android:text="@string/consumo"
         app:layout_constraintStart_toStartOf="@+id/lblPessoas"
@@ -144,8 +144,8 @@
 
     <TextView
         android:id="@+id/lblPorPessoa"
-        android:layout_width="62dp"
-        android:layout_height="38dp"
+        android:layout_width="89dp"
+        android:layout_height="25dp"
         android:layout_marginTop="8dp"
         android:text="@string/porPessoa"
         app:layout_constraintStart_toStartOf="@+id/lblTotal"
@@ -155,43 +155,37 @@
         android:id="@+id/txtConsumo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblConsumo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lblConsumo" />
+        app:layout_constraintStart_toStartOf="@+id/txtServicos" />
 
     <EditText
         android:id="@+id/txtServicos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblServicos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lblServicos" />
+        app:layout_constraintStart_toStartOf="@+id/txtTotal" />
 
     <EditText
         android:id="@+id/txtTotal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBaseline_toBaselineOf="@+id/lblTotal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lblTotal" />
+        app:layout_constraintStart_toStartOf="@+id/txtPorPessoa" />
 
     <EditText
         android:id="@+id/txtPorPessoa"
